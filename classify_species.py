@@ -52,7 +52,7 @@ model = IrisClassifier()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# Train the model
+# Train the model. 
 num_epochs = 100
 for epoch in range(num_epochs):
     for inputs, targets in train_loader:
